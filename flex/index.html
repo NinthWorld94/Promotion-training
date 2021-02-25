@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /* flex 画骰子*/
+    <div class="container">
+        <div class="point p1"></div>
+        <div class="point"></div>
+        <div class="point p3"></div>
+    </div>
+    <style>
+        .container{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .point{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: brown;
+        }
+        /* .container:first-child{
+            align-self: flex-start;
+        } */
+        .p1{
+            align-self: flex-start;
+        }
+        .p3{
+            align-self: flex-end;
+        }
+    </style>
+</body>
+</html>
